@@ -92,7 +92,7 @@ const Photography = () => {
               }}
             >
               <div
-                className="group relative cursor-pointer overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-[0_0_30px_hsl(163_79%_54%/0.3)]"
+                className="group relative cursor-pointer overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_hsl(163_79%_54%/0.3)] border-2 border-border"
                 onClick={() => setSelectedPhoto(photo)}
               >
                 <img
@@ -117,7 +117,7 @@ const Photography = () => {
       <Dialog open={!!selectedPhoto} onOpenChange={() => setSelectedPhoto(null)}>
         <DialogContent className="max-w-screen-lg p-0 border-0 bg-transparent">
           {selectedPhoto && (
-            <div className="glass rounded-2xl overflow-hidden">
+            <div className="glass overflow-hidden border-2 border-border">
               <img
                 src={selectedPhoto.url}
                 alt={selectedPhoto.title}

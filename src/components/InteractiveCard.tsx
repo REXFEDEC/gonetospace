@@ -11,7 +11,7 @@ interface InteractiveCardProps {
 
 const InteractiveCard = ({ title, description, icon, href, external }: InteractiveCardProps) => {
   const content = (
-    <div className="glass group relative overflow-hidden rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_hsl(163_79%_54%/0.3)] cursor-pointer">
+    <div className="glass group relative overflow-hidden p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_hsl(163_79%_54%/0.3)] cursor-pointer border-2 border-border">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       
       <div className="relative z-10">

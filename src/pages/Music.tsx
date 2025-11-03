@@ -96,7 +96,7 @@ const Music = () => {
           {tracks.map((track, index) => (
             <div
               key={track.id}
-              className="glass group cursor-pointer overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_hsl(163_79%_54%/0.3)] animate-slide-in-up"
+              className="glass group cursor-pointer overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_hsl(163_79%_54%/0.3)] animate-slide-in-up border-2 border-border"
               style={{
                 animationDelay: `${index * 100}ms`,
                 animationFillMode: "both",
@@ -151,7 +151,7 @@ const Music = () => {
                 <img
                   src={selectedTrack.cover}
                   alt={selectedTrack.album}
-                  className="w-full max-w-sm mx-auto rounded-lg"
+                  className="w-full max-w-sm mx-auto"
                 />
                 
                 <p className="text-foreground leading-relaxed">
