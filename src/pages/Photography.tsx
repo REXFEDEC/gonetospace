@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { X } from "lucide-react";
 
 interface Photo {
   id: number;
@@ -118,24 +117,15 @@ const Photography = () => {
       <Dialog open={!!selectedPhoto} onOpenChange={() => setSelectedPhoto(null)}>
         <DialogContent className="max-w-screen-lg p-0 border-0 bg-transparent">
           {selectedPhoto && (
-            <div className="relative">
-              <button
-                onClick={() => setSelectedPhoto(null)}
-                className="absolute -top-12 right-0 z-50 glass p-3 rounded-full transition-colors hover:bg-primary/20"
-              >
-                <X size={24} />
-              </button>
-              
-              <div className="glass rounded-2xl overflow-hidden">
-                <img
-                  src={selectedPhoto.url}
-                  alt={selectedPhoto.title}
-                  className="w-full"
-                />
-                <div className="p-6">
-                  <h3 className="text-2xl font-semibold mb-2">{selectedPhoto.title}</h3>
-                  <p className="text-muted-foreground">{selectedPhoto.location}</p>
-                </div>
+            <div className="glass rounded-2xl overflow-hidden">
+              <img
+                src={selectedPhoto.url}
+                alt={selectedPhoto.title}
+                className="w-full"
+              />
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold mb-2">{selectedPhoto.title}</h3>
+                <p className="text-muted-foreground">{selectedPhoto.location}</p>
               </div>
             </div>
           )}
