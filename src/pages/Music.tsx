@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Music as MusicIcon, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 interface Track {
   id: number;
@@ -113,7 +113,7 @@ const Music = () => {
               
               <div className="p-6">
                 <div className="mb-2 flex items-center gap-2 text-primary">
-                  <MusicIcon size={16} />
+                  <i className="hn hn-music" style={{ fontSize: '16px' }}></i>
                   <span className="text-xs">{track.year}</span>
                 </div>
                 

@@ -33,11 +33,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex items-center justify-between">
-          <Link
-            to="/"
-            className="text-xl font-semibold tracking-tight transition-colors hover:text-primary"
-          >
-            SM
+          <Link to="/" className="flex items-center">
+            <img
+              src="/weathercock.png"
+              alt="Weathercock Logo"
+              className="h-8 w-8 transition-transform hover:scale-110"
+            />
           </Link>
 
           {/* Desktop Navigation */}

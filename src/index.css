@@ -92,29 +92,13 @@ All colors MUST be HSL.
     transition: var(--transition-glow);
   }
 
-  /* Custom scrollbar */
+  /* Custom scrollbar - hidden */
   ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    display: none;
   }
 
-  ::-webkit-scrollbar-track {
-    background: hsl(var(--background));
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: hsl(var(--muted));
-    border-radius: 0;
-    transition: background 0.3s ease;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--primary));
-  }
-
-  /* Firefox scrollbar */
+  /* Firefox scrollbar - hidden */
   * {
-    scrollbar-width: thin;
-    scrollbar-color: hsl(var(--muted)) hsl(var(--background));
+    scrollbar-width: none;
   }
 }

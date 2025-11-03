@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Star } from "lucide-react";
 
 interface Game {
   id: number;
@@ -109,7 +108,7 @@ const Games = () => {
                   <span className="text-xs text-primary">{game.genre}</span>
                   <div className="flex items-center gap-1">
                     {Array.from({ length: game.rating }).map((_, i) => (
-                      <Star key={i} size={14} className="fill-primary text-primary" />
+                      <i key={i} className="hn hn-star-solid" style={{ fontSize: '14px', color: 'hsl(var(--primary))' }}></i>
                     ))}
                   </div>
                 </div>
@@ -140,7 +139,7 @@ const Games = () => {
                   <span className="text-sm text-muted-foreground">•</span>
                   <div className="flex items-center gap-1">
                     {Array.from({ length: selectedGame.rating }).map((_, i) => (
-                      <Star key={i} size={16} className="fill-primary text-primary" />
+                      <i key={i} className="hn hn-star-solid" style={{ fontSize: '16px', color: 'hsl(var(--primary))' }}></i>
                     ))}
                   </div>
                 </div>

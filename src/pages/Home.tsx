@@ -1,40 +1,45 @@
 import Navbar from "@/components/Navbar";
 import Typewriter from "@/components/Typewriter";
 import InteractiveCard from "@/components/InteractiveCard";
-import { BookOpen, Music, Gamepad2, Camera, Briefcase } from "lucide-react";
 
 const Home = () => {
   const cards = [
     {
       title: "Blog",
       description: "Thoughts, stories, and ideas I'd like to share with the world.",
-      icon: <BookOpen size={40} />,
+      icon: <i className="hn hn-newspaper" style={{ fontSize: '40px' }}></i>,
       href: "/blog",
     },
     {
       title: "Music",
       description: "The soundtrack of my life - albums and tracks I keep coming back to.",
-      icon: <Music size={40} />,
+      icon: <i className="hn hn-music" style={{ fontSize: '40px' }}></i>,
       href: "/music",
     },
     {
       title: "Games",
       description: "Virtual worlds I've explored and experiences worth recommending.",
-      icon: <Gamepad2 size={40} />,
+      icon: <i className="hn hn-gaming" style={{ fontSize: '40px' }}></i>,
       href: "/games",
     },
     {
       title: "Photography",
       description: "Moments captured through my lens, frozen in time forever.",
-      icon: <Camera size={40} />,
+      icon: <i className="hn hn-retro-camera" style={{ fontSize: '40px' }}></i>,
       href: "/photography",
     },
     {
       title: "Professional",
-      description: "My work, projects, and professional journey in detail.",
-      icon: <Briefcase size={40} />,
+      description: "Head over to sameer.goneto.space for professional details.",
+      icon: <i className="hn hn-user" style={{ fontSize: '40px' }}></i>,
       href: "https://sameer.goneto.space/",
       external: true,
+    },
+    {
+      title: "Grid Filler (Ignore Me)",
+      description: "I'm here to complete the grid on bigger screens. You can ignore me. <3",
+      icon: <i className="hn hn-robot" style={{ fontSize: '40px' }}></i>,
+      href: "#",
     },
   ];
 
@@ -70,6 +75,22 @@ const Home = () => {
           ))}
         </div>
       </main>
+
+      <footer className="border-t border-border mt-20">
+        <div className="container mx-auto px-6 max-w-6xl py-8">
+          <div className="text-center text-sm text-muted-foreground">
+            <a 
+              href="https://www.flaticon.com/free-icons/pixel" 
+              title="pixel icons"
+              className="hover:text-primary transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              weathercock pixel icon created by Freepik - Flaticon
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
