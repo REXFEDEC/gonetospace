@@ -37,7 +37,7 @@ All colors MUST be HSL.
     --input: 220 18% 18%;
     --ring: 163 79% 54%;
 
-    --radius: 0.75rem;
+    --radius: 0;
 
     /* Glassmorphism effects */
     --glass-bg: 220 18% 12%;
@@ -59,8 +59,7 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-['Inter',sans-serif] antialiased;
-    font-feature-settings: 'ss01' on, 'ss02' on;
+    @apply bg-background text-foreground font-sans antialiased;
     background-image: 
       linear-gradient(hsl(var(--border) / 0.3) 1px, transparent 1px),
       linear-gradient(90deg, hsl(var(--border) / 0.3) 1px, transparent 1px);
@@ -105,7 +104,7 @@ All colors MUST be HSL.
 
   ::-webkit-scrollbar-thumb {
     background: hsl(var(--muted));
-    border-radius: 5px;
+    border-radius: 0;
     transition: background 0.3s ease;
   }
 
