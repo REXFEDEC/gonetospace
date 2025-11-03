@@ -17,10 +17,10 @@ const Home = () => {
       href: "/music",
     },
     {
-      title: "Games",
-      description: "Virtual worlds I've explored and experiences worth recommending.",
-      icon: <i className="hn hn-gaming" style={{ fontSize: '40px' }}></i>,
-      href: "/games",
+      title: "Movies",
+      description: "Films that have shaped my perspective and left lasting impressions.",
+      icon: <i className="hn hn-film" style={{ fontSize: '40px' }}></i>,
+      href: "/movies",
     },
     {
       title: "Photography",
