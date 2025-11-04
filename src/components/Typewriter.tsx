@@ -4,7 +4,7 @@ const Typewriter = () => {
   const phrases = [
     "Check out the music I like.",
     "See the photos I clicked.",
-    "Explore the games I recommend.",
+    "Explore the Shows/Movies I recommend.",
     "Read my latest blogs.",
     "Visit my professional site.",
   ];

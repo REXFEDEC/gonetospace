@@ -61,6 +61,16 @@ const Navbar = () => {
                 />
               </Link>
             ))}
+            
+            {/* Professional CTA Button */}
+            <a
+              href="https://sameer.goneto.space/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary/10 transition-colors border border-primary/20 hover:border-primary/40"
+            >
+              Professional
+            </a>
           </div>
 
           {/* Mobile Navigation */}
@@ -84,6 +94,17 @@ const Navbar = () => {
                     {link.name}
                   </Link>
                 ))}
+                
+                {/* Professional CTA Button - Mobile */}
+                <a
+                  href="https://sameer.goneto.space/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                  className="glass px-4 py-3 rounded-lg text-lg font-medium hover:bg-primary/10 transition-colors border border-primary/20 hover:border-primary/40 text-center"
+                >
+                  Professional
+                </a>
               </nav>
             </SheetContent>
           </Sheet>

@@ -19,7 +19,7 @@ const Home = () => {
     {
       title: "Movies",
       description: "Films that have shaped my perspective and left lasting impressions.",
-      icon: <i className="hn hn-film" style={{ fontSize: '40px' }}></i>,
+      icon: <i className="hn hn-play" style={{ fontSize: '40px' }}></i>,
       href: "/movies",
     },
     {
@@ -54,7 +54,7 @@ const Home = () => {
           </h1>
           
           <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-            Hey, I'm Sameer Mann — I make things, click photos, and play games.
+            Hey, this is Sameer Mann — and welcome to this corner of the internet (my corner of the internet).
           </p>
           
           <Typewriter />
@@ -62,9 +62,10 @@ const Home = () => {
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {cards.map((card, index) => (
+            // Hide the grid filler (last card) on screens smaller than lg
             <div
               key={card.title}
-              className="animate-slide-in-up"
+              className={`animate-slide-in-up ${index === cards.length - 1 ? 'hidden lg:block' : ''}`}
               style={{
                 animationDelay: `${index * 100}ms`,
                 animationFillMode: "both",

@@ -101,4 +101,15 @@ All colors MUST be HSL.
   * {
     scrollbar-width: none;
   }
+
+  /* Konami Code magnetic repulsion effect */
+  .konami-magnetic * {
+    transition: transform 0.3s ease-out;
+    pointer-events: none;
+  }
+
+  .konami-magnetic .magnetic-element {
+    position: relative;
+    will-change: transform;
+  }
 }
