@@ -1,73 +1,155 @@
-# Welcome to your Lovable project
+# GoNetoSpace
 
-## Project info
+A personal portfolio website for Sameer Mann - a creative digital space showcasing thoughts, creative works, and professional interests.
 
-**URL**: https://lovable.dev/projects/c39da5ff-5667-449f-94ed-dd7821be5e1b
+## Project Overview
 
-## How can I edit this code?
+GoNetoSpace is a modern, interactive personal portfolio website featuring a clean design with engaging animations and a unique user experience. The site includes a hidden Konami Code easter egg that activates a magnetic effect, making elements repel from the cursor for a playful interaction.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- **Personal Portfolio**: Showcases Sameer Mann's digital presence and creative works
+- **Multi-Section Layout**: Blog, Music, Movies, and Photography sections
+- **Interactive Design**: Smooth animations, hover effects, and glass morphism styling
+- **Konami Code Easter Egg**: Enter ↑↑↓↓←→←→BA to activate magnetic cursor effects
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Professional Link**: Direct link to professional portfolio at sameer.goneto.space
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c39da5ff-5667-449f-94ed-dd7821be5e1b) and start prompting.
+## Sections
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Home**: Landing page with interactive cards linking to different sections
+- **Blog**: Collection of thoughts and stories on design, photography, and gaming
+- **Music**: Music recommendations and personal soundtrack
+- **Movies**: Film reviews and cinema recommendations  
+- **Photography**: Visual portfolio of captured moments
+- **Professional**: Link to professional work and details
 
-**Use your preferred IDE**
+## Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Frontend Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: TailwindCSS with shadcn/ui components and glass morphism effects
+- **State Management**: React Query (@tanstack/react-query)
+- **Routing**: React Router DOM
+- **Icons**: Lucide React and Hacker Noon Pixel Icon Library
+- **UI Components**: Radix UI primitives
+- **Animations**: Custom CSS animations with fade-in and slide-up effects
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Interactive Features
 
-Follow these steps:
+- **Glass Morphism Design**: Modern frosted glass effect throughout the UI
+- **Smooth Animations**: Staggered fade-in and slide-up animations on page load
+- **Hover Effects**: Interactive cards with transform and shadow effects
+- **Konami Code**: Hidden feature (↑↑↓↓←→←→BA) that activates magnetic cursor repulsion
+- **Responsive Navigation**: Mobile-friendly hamburger menu with slide-out drawer
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Getting Started
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Prerequisites
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Node.js (v18 or higher)
+- npm or yarn
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd gonetospace
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Try the Konami Code
 
-**Use GitHub Codespaces**
+Once the site is loaded, try entering the Konami Code: ↑↑↓↓←→←→BA
+Watch as elements start repelling from your cursor!
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Available Scripts
 
-## What technologies are used for this project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run build:dev` - Build for development
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-This project is built with:
+## Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+src/
+├── components/         # Reusable UI components
+│   ├── ui/             # shadcn/ui components
+│   ├── InteractiveCard.tsx
+│   ├── Navbar.tsx
+│   └── Typewriter.tsx
+├── pages/              # Page components
+│   ├── Home.tsx        # Landing page with card grid
+│   ├── Blog.tsx        # Blog posts with modal view
+│   ├── Music.tsx       # Music collection
+│   ├── Movies.tsx      # Movie recommendations
+│   ├── Photography.tsx # Photo gallery
+│   └── NotFound.tsx    # 404 page
+├── hooks/              # Custom React hooks
+├── lib/                # Utility libraries
+└── styles/             # Global styles and CSS animations
+```
 
-## How can I deploy this project?
+## Key Components
 
-Simply open [Lovable](https://lovable.dev/projects/c39da5ff-5667-449f-94ed-dd7821be5e1b) and click on Share -> Publish.
+- **InteractiveCard**: Reusable card component with hover effects and animations
+- **Navbar**: Fixed navigation with scroll effects and mobile menu
+- **Typewriter**: Animated text effect for the homepage
+- **Glass Morphism**: Custom styling for frosted glass effects throughout
 
-## Can I connect a custom domain to my Lovable project?
+## Content Structure
 
-Yes, you can!
+- **Blog**: Features posts on design minimalism, photography, and indie gaming
+- **Music**: Personal music collection and recommendations
+- **Movies**: Curated film selections and reviews
+- **Photography**: Visual portfolio with image galleries
+- **Professional**: External link to sameer.goneto.space
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Features
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- Responsive design that works on all devices
+- Modern glass morphism UI with smooth animations
+- Type-safe development with TypeScript
+- Optimized build with Vite
+- Component-based architecture
+- Interactive easter eggs and animations
+- Mobile-first responsive navigation
+
+## Deployment
+
+To deploy this application:
+
+1. Build the project:
+```bash
+npm run build
+```
+
+2. Deploy the `dist` folder to your hosting provider
+
+The build will create optimized static files in the `dist` directory.
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run tests and linting
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
